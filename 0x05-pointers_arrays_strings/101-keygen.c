@@ -12,7 +12,6 @@ int main(void)
 {
 	int sum;
 	char ran;
-
 	srand(time(NULL));
 	while (sum <= 2772)
 	{
