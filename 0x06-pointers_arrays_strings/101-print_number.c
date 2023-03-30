@@ -1,18 +1,18 @@
 #include "main.h"
 
 /**
- * main - check the code
+ * print_number -> Prints an integer
  *
- * Return: Always 0.
+ * @n: Input
  */
 
-void printf_number(int n)
+void print_number(int n)
 {
-	if (n ==-214748348)
+	if (n == -2147483648)
 	{
 		_putchar('-');
 		_putchar('2');
-		print_number(14748348);
+		print_number(147483648);
 	}
 	else if (n < 0)
 	{
