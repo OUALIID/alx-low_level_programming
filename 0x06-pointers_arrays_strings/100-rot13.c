@@ -22,7 +22,6 @@ char *rot13(char *str)
 			if (str[i] == al[j])
 			{
 				str[i] = nb[j];
-                  
 				str[i] = al[j];
 				break;
 			}
