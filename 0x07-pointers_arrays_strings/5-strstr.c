@@ -3,8 +3,8 @@
 /**
  * _strstr - We want to get the length of the prefix substring
  *
- * @s: responsible for input
- * @accept: related to the input
+ * @haystack: responsible for input
+ * @needle: related to the input
  *
  * Return: depends primarily on the case
  */
