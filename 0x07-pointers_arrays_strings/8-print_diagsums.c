@@ -5,8 +5,8 @@
  * print_diagsums - used to print
  * the sum of the two diameters
  *
- * @s: responsible for input
- * @accept: related to the input
+ * @a: responsible for input
+ * @size: related to the input
  */
 
 void print_diagsums(int *a, int size)
