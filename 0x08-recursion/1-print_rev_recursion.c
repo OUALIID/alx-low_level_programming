@@ -3,8 +3,8 @@
 /**
  * _print_rev_recursion - This results in string outpu
  * entirely in the opposite direction.
- *@s: for inpu.
  *
+ *@s: for inpu.
  *Return: void.
  */
 
