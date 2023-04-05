@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
- * _puts_recursion Prints a string that is followed by a newline
+ * _puts_recursion - Prints a string that is followed by a newline
+ * @s: for input.
  *
- * @s: for input
+ * Return: void.
  */
 
 void _puts_recursion(char *s)
