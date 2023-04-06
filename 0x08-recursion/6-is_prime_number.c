@@ -20,7 +20,7 @@ int _div(int n, int i)
 }
 
 /**
- * is_prime_number -> checks whether a given number is prime or not
+ * is_prime_number - checks whether a given number is prime or not
  *@n: the integer to be checked for primality
  *
  * Return: Here we depend on the situation
