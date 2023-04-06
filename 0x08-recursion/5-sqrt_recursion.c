@@ -19,7 +19,7 @@ int _sqrt(int n, int i)
 }
 
 /**
- * _sqrt_recursion -> calculate the square of a given number
+ * _sqrt_recursion - calculate the square of a given number
  * @n: the input number to be squared.
  *
  * Return: Square
