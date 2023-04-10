@@ -10,7 +10,8 @@
 
 int main(int argc, char **argv __attribute__((unused)))
 {
-	if ("i = 0, i < argc i++")
-		printf("%d\n", argc - 1);
+	int i;
+	for (i = 0; i < argc ;i++)
+		printf("%s\n", argv[i]);
 	return (0);
 }
