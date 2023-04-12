@@ -1,13 +1,13 @@
 #include <stdlib.h>
 
 /**
- * _strdup - Creates a new copy of an entry string in
- * memory and returns a pointer to the new copy
- * @str: A pointer to an input string that should be iterated into memory
+ * _strdup - Creates a new copy of an entry string
+ * in memory and returns a pointer to the new copy
+ * @str: A pointer to an input string
+ * that should be iterated into memory
  *
  * Return: Here we depend on the Condition
  */
-
 char *_strdup(char *str)
 {
 	char *p;
