@@ -8,7 +8,7 @@
  * Return: Here we depend on the Condition
  */
 
-char _strdup(char *str)
+char *_strdup(char *str)
 {
 	char *p;
 	int j;
