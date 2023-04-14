@@ -3,7 +3,8 @@
 #include <stdio.h>
 
 /**
- * array_range - Create an array of integers containing all values from minimum to maximum
+ * array_range - Create an array of integers containing
+ * all values from minimum to maximum
  * @min: variable of some data type.
  * @max: variable of some data type.
  * Return: variable of some data type.
