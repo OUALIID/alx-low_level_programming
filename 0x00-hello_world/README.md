@@ -1,3 +1,4 @@
+<head>
 <style>/* Three image containers (use 25% for four, and 50% for two, etc) */
 .column {
   float: left;
@@ -12,6 +13,7 @@
   display: table;
 }
 </style>
+</head>
 <h1>README 0x00-hello_world</h1>
 
 <h2>0. Preprocessor</h2>
