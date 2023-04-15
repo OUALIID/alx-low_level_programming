@@ -1,5 +1,7 @@
 <h1>README 0x00-hello_world</h1>
-
+</ul>
+            <img src="PIPLO/s6.gif" alt="coding" width="450px" height="450px">
+</ul>
 <h2>0. Preprocessor</h2>
 <h'>A script that runs a C file through the preprocessor and save the result into another file.</h4>
 <ul>
@@ -69,7 +71,4 @@ Warnings are allowed</li>
 <li>You are not allowed to use any functions listed in the NAME section of the man (3) printf or man (3) puts</li>
 <li>Your program should return 1</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
-</ul>
-</ul>
-            <img src="PIPLO/s6.gif" alt="coding" width="450px" height="450px">
 </ul>
