@@ -72,6 +72,5 @@ Warnings are allowed</li>
 </ul>
 
 <ul>
-	<li><img src="PIPLO/s2.gif" alt="coding" width="450px" height="550px"></img></li>
-    <li><img src="PIPLO/s6.gif" alt="coding" width="150px" height="250px"></img></li>
+	<li><img src="PIPLO/s2.gif" alt="coding" width="450px" height="550px"></img></li> <li><img src="PIPLO/s6.gif" alt="coding" width="150px" height="250px"></img></li>
 </ul>
