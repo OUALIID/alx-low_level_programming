@@ -71,5 +71,5 @@ Warnings are allowed</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
 </ul>
 </ul>
-            <img src="PIPLO/s6.gif" alt="coding" width="450px" height="550px">
+            <img src="PIPLO/s6.gif" alt="coding" width="450px" height="450px">
 </ul>
