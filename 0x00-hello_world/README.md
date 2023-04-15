@@ -1,6 +1,6 @@
 <h1>README 0x00-hello_world</h1>
 </ul>
-            <img src="PIPLO/s6.gif" alt="coding" width="450px" height="450px">
+            <img src="PIPLO/s6.gif" alt="coding" width="450px" height="350px">
 </ul>
 <h2>0. Preprocessor</h2>
 <h'>A script that runs a C file through the preprocessor and save the result into another file.</h4>
