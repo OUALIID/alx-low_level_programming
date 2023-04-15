@@ -1,3 +1,17 @@
+<style>/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+</style>
 <h1>README 0x00-hello_world</h1>
 
 <h2>0. Preprocessor</h2>
@@ -71,7 +85,12 @@ Warnings are allowed</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
 </ul>
 
-<ul>
-	<li><img src="PIPLO/s2.gif" alt="coding" width="450px" height="550px"></img></li>
-    <li><img src="PIPLO/s6.gif" alt="coding" width="150px" height="250px"></img></li>
-</ul>
+<div class="row">
+  <div class="column">
+    <img src="PIPLO/s2.gif" alt="coding" width="450px" height="550px">
+  </div>
+  <div class="column">
+    <img src="PIPLO/s6.gif" alt="coding" width="150px" height="250px">
+  </div>
+</div>
+
