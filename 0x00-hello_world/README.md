@@ -70,3 +70,4 @@ Warnings are allowed</li>
 <li>Your program should return 1</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
 </ul>
+<p><img src="PIPLO/pi21.gif" alt="coding" width="300px" height="150px"></img></p>
