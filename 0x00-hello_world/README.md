@@ -1,5 +1,8 @@
 <h1>README 0x00-hello_world</h1>
-
+<ul>
+	<li><img src="PIPLO/s2.gif" alt="coding" width="450px" height="550px"></img></li>
+    <li><img src="PIPLO/s6.gif" alt="coding" width="150px" height="250px"></img></li>
+</ul>
 <h2>0. Preprocessor</h2>
 <h'>A script that runs a C file through the preprocessor and save the result into another file.</h4>
 <ul>
@@ -71,6 +74,3 @@ Warnings are allowed</li>
 <li>Your program should compile without any warnings when using the -Wall gcc option</li>
 </ul>
 
-<ul>
-	<li><img src="PIPLO/s2.gif" alt="coding" width="450px" height="550px"></img></li> <li><img src="PIPLO/s6.gif" alt="coding" width="150px" height="250px"></img></li>
-</ul>
