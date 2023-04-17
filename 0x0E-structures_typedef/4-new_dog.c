@@ -7,7 +7,7 @@
  * @age: The dog age
  * @owner: The dog owne
  *
- * Return: A pointer to an instance of a dog struct
+ * Return: Always 0
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
@@ -21,5 +21,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 		p->age = age;
 		p->owner = owner;
 	}
-	return (p);
+	return (*p);
 }
