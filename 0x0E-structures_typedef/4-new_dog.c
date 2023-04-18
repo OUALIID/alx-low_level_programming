@@ -5,21 +5,28 @@
  * new_dog - function that creates a new dog.
  * @name: The dog's name
  * @age: The dog age
- * @owner: The dog owne
+ * @owner: The dog owner
  *
  * Return: Always 0
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	dog_t *p;
+	dog_t *new_dog;
 
-	p = malloc(sizeof(dog_t));
-	if (p != NULL)
+	new_dog = malloc(sizeof(dog_t));
+	if (new_dog == NULL)
+		return (NULL);
+	new_dog->name = malloc(strlen(name) + 1);
+	if (new_dog->name == NULL)
 	{
-		p->name = name;
-		p->age = age;
-		p->owner = owner;
+		free(new_dog);
+		return (NULL);
 	}
-	return (p);
+	new_dog->owner = malloc(strlen(owner) + 1);
+	if (new_dog->owner == NULL)
+	{
+		free(new_dog);
+		return (NULL);
+	}
 }
