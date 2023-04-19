@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * print_name - Prints a name and takes a pointer to a function as an argument
+ * print_name - Prints a name and takes
+ * a pointer to a function as an argument
  * @name: By it we mean an input name
  * @f: It is a pointer to a function
  */
