@@ -4,12 +4,6 @@
 #include <stdarg.h>
 #include <stdio.h>
 
-typedef struct string
-{
-	char *str;
-	void (*print)(va_list arg);
-} to_string;
-
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
 void print_strings(const char *separator, const unsigned int n, ...);
