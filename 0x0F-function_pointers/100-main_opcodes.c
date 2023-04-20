@@ -28,19 +28,19 @@ void op_codes(char *argv, int argc)
 
 int main(int argc, char **argv)
 {
-	int x;
+	int i;
 
 	if (argc != 2)
 	{
 		printf("Error\n");
 		exit(1);
 	}
-	x = atoi(argv[1]);
+	i = atoi(argv[1]);
 	if (i < 0)
 	{
 		printf("Error\n");
 		exit(2);
 	}
-	op_codes((char *) &main, x);
+	op_codes((char *) &main, i);
 	return (0);
 }
