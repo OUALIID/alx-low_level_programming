@@ -7,16 +7,11 @@
  * Return: the length of string
  */
 
-int _strlen(char *str)
+unsigned int _strlen(char *str)
 {
-	int i = 0;
+	unsigned int i = 0;
 
-	if (*str)
-	{
-		++i;
-		++str;
-	}
-
+	for (i = 0; str[i]; ++i);
 	return (i);
 }
 /**
