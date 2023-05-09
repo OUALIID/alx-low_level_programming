@@ -2,7 +2,7 @@
 /**
  * create_file - that creates a file.
  * @filename: the input file.
- * @letters: nput the number.
+ * @text_content: nput the number.
  * Return:  Here we depend on the Condition.
  */
 int create_file(const char *filename, char *text_content)
