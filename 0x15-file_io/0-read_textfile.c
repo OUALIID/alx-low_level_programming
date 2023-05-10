@@ -6,34 +6,28 @@
  * @letters: nput the number.
  * Return:  Here we depend on the Condition.
  */
-ssize_t read_textfile(const char *filename, size_t letters)
+size_t read_textfile(const char *filename, size_t letters)
 {
-	int op, rd, wr;
-	char *buffer;
+	int i;
+	size_t j;
+	char *s;
+	size_t len;
 
 	if (filename == NULL)
 		return (0);
-
-	op = open(filename, O_RDONLY);
-	if (op < 0)
+	i = open(filename, O_RDONLY, 0644);
+	if (i == -1)
 		return (0);
-	buffer = (char *) malloc(letters * sizeof(char));
-	if (buffer == NULL)
+	s = malloc(sizeof(char) * letters);
+	if (s == NULL)
 		return (0);
-	rd = read(op, buffer, letters);
-	if (rd < 0)
+	len = read(i, s, sizeof(char) * letters);
+	j = 0;
+	while (j < len)
 	{
-		free(buffer);
-		return (0);
+		write(STDOUT_FILENO, &s[j], 1);
+		j++;
 	}
-	buffer[rd] = '\0';
-	wr = write(STDOUT_FILENO, buffer, rd);
-	if (wr < 0)
-	{
-		free(buffer);
-		return (0);
-	}
-	free(buffer);
-	close(op);
-	return (wr);
+	close(i);
+	return (len);
 }
