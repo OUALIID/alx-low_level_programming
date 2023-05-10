@@ -2,9 +2,9 @@
 /**
  * read_textfile - that reads a text file and prints
  * it to the POSIX standard output.
- * @filename: the input file
- * @letters: nput the number
- * Return:  Here we depend on the Condition
+ * @filename: the input file.
+ * @letters: nput the number.
+ * Return:  Here we depend on the Condition.
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
