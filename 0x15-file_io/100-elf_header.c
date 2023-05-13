@@ -1,28 +1,44 @@
-#include "main.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <fcntl.h>
+#include <unistd.h>
+#include <errno.h>
 /**
  * main - the entry point
+ * @argv: argemant1
+ * @argc: argemant2
  * Return: Always 0
  */
-int main(void)
+int main(int argc, char *argv[])
 {
-	int fd;
-	ssize_t nletters;
-	char *filename;
-	char *text_content;
+	int f;
+	char *read_f = malloc(32);
+	char *magic_num = "\x7f"
+					  "ELF";
 
-	filename = "test_0.txt";
-	text_content = "Holberton School!\n";
-	nletters = 0;
-	printf("-> %s file created\n", filename);
-	fd = create_file(filename, text_content);
-	printf("-> %s file written\n", filename);
-	nletters = read_textfile(filename, 1024);
-	printf("-> %s file read\n", filename);
-	printf("-> %ld bytes read\n", nletters);
-	printf("-> %s file appended\n", filename);
-	nletters = append_text_to_file(filename, "\nI love C!");
-	printf("-> %ld bytes appended\n", nletters);
-	nletters = read_textfile(filename, 1024);
-	printf("-> %ld bytes read\n", nletters);
+	if (argc != 2)
+	{
+		perror("arg");
+		return (1);
+	}
+	f = open(argv[1], O_RDONLY);
+	if (f == -1)
+	{
+		perror("open");
+		return (1);
+	}
+	if (read(f, read_f, 32) == -1)
+	{
+		perror("read");
+		close(f);
+		return (1);
+	}
+	if (strcmp(read_f, magic_num) == 0)
+		printf("elf\n");
+	else
+		printf("elf\n");
+	close(f);
+	free(read_f);
 	return (0);
 }
