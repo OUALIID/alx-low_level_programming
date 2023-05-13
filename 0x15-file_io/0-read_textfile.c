@@ -8,26 +8,26 @@
  */
 size_t read_textfile(const char *filename, size_t letters)
 {
-	int i;
-	size_t j;
-	char *s;
-	size_t len;
+	int f;
+	size_t i;
+	char *p;
+	size_t tmp;
 
 	if (filename == NULL)
 		return (0);
-	i = open(filename, O_RDONLY, 0644);
-	if (i == -1)
+	f = open(filename, O_RDONLY, 0644);
+	if (f == -1)
 		return (0);
-	s = malloc(sizeof(char) * letters);
-	if (s == NULL)
+	p = malloc(sizeof(char) * letters);
+	if (p == NULL)
 		return (0);
-	len = read(i, s, sizeof(char) * letters);
-	j = 0;
-	while (j < len)
+	tmp = read(f, p, sizeof(char) * letters);
+	i = 0;
+	while (i < tmp)
 	{
-		write(STDOUT_FILENO, &s[j], 1);
-		j++;
+		write(STDOUT_FILENO, &p[i], 1);
+		i++;
 	}
-	close(i);
-	return (len);
+	close(f);
+	return (tmp);
 }

@@ -35,7 +35,7 @@ int main(int argc, char *argv[])
 		return (1);
 	}
 	if (strcmp(read_f, magic_num) == 0)
-		printf("elf\n");
+		printf("ef\n");
 	else
 		printf("elf\n");
 	close(f);
