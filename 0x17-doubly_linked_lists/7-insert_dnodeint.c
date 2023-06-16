@@ -1,11 +1,10 @@
 #include "lists.h"
-
 /**
- * insert_dnodeint_at_index - code check
- * @h: header of the list
- * @idx: is a index variable
- * @n: is a variable
- * Return: return 0
+ * insert_dnodeint_at_index - check the code
+ * @h: the head of the list
+ * @idx: index variable
+ * @n: variable
+ * Return: dlistint_t.
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
