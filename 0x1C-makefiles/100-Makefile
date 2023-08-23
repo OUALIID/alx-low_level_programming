@@ -5,14 +5,22 @@ NAME = school
 RM = rm
 CFLAGS = -Wall -Werror -Wextra -pedantic
 
-.PHONY = all clean oclean fclean re
-all: m.h $(OBJ)
-	$(CC) $(OBJ) -o $(NAME)
+.PHONY: all clean oclean fclean re
+
+all: $(NAME)
+
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $@
+
 clean:
-	$(RM) $(NAME)
+	$(RM) -f *~ $(NAME)
+
 oclean:
-	$(RM) $(OBJ)
-fclean:
-	$(RM) $(NAME)
-	$(RM) $(OBJ)
-re: oclean all
+	$(RM) -f $(OBJ)
+
+fclean: clean oclean
+
+re: fclean all
+
+# Rule to ensure that 'm.h' exists before compiling
+$(OBJ): m.h
