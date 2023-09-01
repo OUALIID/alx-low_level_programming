@@ -1,8 +1,8 @@
 <div align="center">
-<h1><strong>Understanding Makefiles: A Comprehensive Guide</strong></h1></div>
+<h1><strong>Understanding Makefiles: A Comprehensive Guide 📝</strong></h1></div>
 
 <div align="center">          
-<img src="PIPLO1/s9.gif" alt="coding" width="700px" height="350px" /></div>
+<img src="https://i.imgur.com/YrRSVq7.png" alt="coding" width="900px" height="380px" /></div>
 
 <h2><strong>1. What is a Makefile and How Does It Work?</strong></h2>
 <p>A <strong>Makefile</strong> is a powerful tool for automating tasks in software development. It acts as a set of instructions that tells the <strong>make utility</strong> how to build and manage a project. Makefiles are commonly used in compiling programs, managing dependencies, and executing tasks efficiently.</p>
